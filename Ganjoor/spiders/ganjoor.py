@@ -8,15 +8,7 @@ import os
 class GanjoorSpider(scrapy.Spider):
     name = 'ganjoor'
     allowed_domains = ['ganjoor.net']
-    output_dir = '/Users/soroushomranpour/Desktop/Folders/crawlers/Ganjoor/data/'
-    # custom_settings = {
-    #     'CONCURRENT_REQUESTS': 64,
-    #     'DOWNLOAD_DELAY': 0,
-    #     'CONCURRENT_REQUESTS_PER_DOMAIN': 64,
-    #     'ITEM_PIPELINES':{
-    #         '.pipelines.ganjoor.ganjoorPipeline': 300,
-    #     }
-    # }
+    output_dir = 'data/'
     
     def start_requests(self):
         url = 'https://ganjoor.net/'
